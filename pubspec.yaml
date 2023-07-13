@@ -1,0 +1,109 @@
+name: learn_app
+description: A new Flutter project.
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.2 <3.0.0"
+
+scripts:
+  web:
+    before-dev: "dart scripts/web_configs_build_dev.dart"
+    dev: "flutter run -d chrome -t lib/main_dev.dart --web-port 5000"
+  gen: "flutter pub run build_runner watch --delete-conflicting-outputs"
+  i18n: "flutter pub run i18n_json"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  auto_route: ^7.4.0
+  firebase_core: ^2.14.0
+  flutter_riverpod: ^2.3.6
+  hive_flutter: ^1.1.0
+  flutter_localization: ^0.1.12
+  form_builder_validators: ^8.6.1
+  freezed_annotation: ^2.2.0
+  dartz: ^0.10.1
+  webview_flutter: ^4.2.2
+  supabase_flutter: ^1.10.6
+  webview_flutter_wkwebview: ^3.6.1
+  internet_connection_checker: ^1.0.0+1
+  image_picker: ^1.0.0
+  flutter_form_builder: ^8.0.0
+  simple_animations: ^5.0.2
+  shimmer: ^3.0.0
+  cached_network_image: ^3.2.3
+  flutter_rating_bar: ^4.0.1
+  intl_phone_field: ^3.2.0
+  intl: ^0.17.0
+  syncfusion_flutter_datepicker: ^21.2.3
+  numeral: ^2.0.1
+  # riverpod_annotation: ^2.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # custom_lint:
+  flutter_lints: ^2.0.0
+  auto_route_generator: ^7.1.1
+  build_runner:
+  i18n_json: ^0.9.1
+  flutter_gen_runner: ^5.3.1
+  hive_generator: ^2.0.0
+  json_serializable: ^6.6.2
+  ferry_generator: ^0.8.1
+  rps: ^0.6.4
+  freezed: ^2.3.5
+  # riverpod_generator: ^2.2.3
+  # riverpod_lint: ^1.3.2
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/locales/
+    - assets/icons/
+    - assets/images/
+    - assets/fonts/
+  fonts:
+    - family: "SVNPoppins"
+      fonts:
+        - asset: assets/fonts/SVN-Poppins-Italic.ttf
+          style: italic
+        - asset: assets/fonts/SVN-Poppins-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/SVN-Poppins-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/SVN-Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/SVN-Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/SVN-Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/SVN-Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/SVN-Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/SVN-Poppins-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/SVN-Poppins-Black.ttf
+          weight: 900
+    - family: AppIcons
+      fonts:
+        - asset: assets/fonts/app_icons.ttf
+
+flutter_gen:
+  output: lib/global/gen
+  line_length: 80
+
+  integrations:
+    flutter_svg: true
+    flare_flutter: true
+    rive: true

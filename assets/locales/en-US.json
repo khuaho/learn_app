@@ -1,0 +1,115 @@
+{
+  "appName": "Learn App",
+  "error_": {
+    "error": "Error!!!",
+    "unknown": "An Unexpected Error Occurred",
+    "illegalData": "Wrong data format",
+    "noNetwork": "No internet connection",
+    "unsupportedFile": "Unsupported file"
+  },
+  "language": ["English", "Tiếng Việt"],
+  "button_": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "seeAll": "See All",
+    "logout": "Logout"
+  },
+  "common_": {
+    "search": "Search",
+    "plural_": {
+      "hour": {
+        "__plural": {
+          "zero": "{day} hour",
+          "one": "{day} hour",
+          "other": "{day} hours"
+        }
+      },
+      "day": {
+        "__plural": {
+          "zero": "{day} day",
+          "one": "{day} day",
+          "other": "{day} days"
+        }
+      },
+      "week": {
+        "__plural": {
+          "zero": "{day} week",
+          "one": "{day} week",
+          "other": "{day} weeks"
+        }
+      },
+      "session": {
+        "__plural": {
+          "zero": "{session} session",
+          "one": "{session} session",
+          "other": "{session} sessions"
+        }
+      },
+      "question": {
+        "__plural": {
+          "zero": "{question} question",
+          "one": "{question} question",
+          "other": "{question} questions"
+        }
+      },
+      "participant": {
+        "__plural": {
+          "zero": "{participant} participant",
+          "one": "{participant} participant",
+          "other": "{participant} participants"
+        }
+      },
+      "rating": {
+        "__plural": {
+          "zero": "{rating} rating",
+          "one": "{rating} rating",
+          "other": "{rating} ratings"
+        }
+      }
+    }
+  },
+  "auth_": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "forgotPassword": "Forgot password",
+    "username_": {
+      "label": "Username",
+      "hint": "Enter user name or email",
+      "isRequired": "User name or email is required"
+    },
+    "password": {
+      "label": "Password",
+      "hint": "Enter password",
+      "isRequired": "Password is required"
+    },
+    "fullName": {
+      "label": "Full Name",
+      "hint": "Enter full Name",
+      "isRequired": "Full name is required"
+    },
+    "haveNotAnAccount": "Haven't an account? ",
+    "haveYouAnAccount": "Have you an account? "
+  },
+  "dashboard_": {
+    "home": "Home",
+    "setting": "Setting"
+  },
+  "home_": {
+    "title": "Home",
+    "popularCourses": "Popular courses",
+    "popularSkillTests": "Popular skill tests"
+  }, 
+  "setting_": {
+    "preferences": "Setting Preferences",
+    "language": "Language",
+    "mode": ["Dark Mode", "Light Mode", "Auto Mode"],
+    "helpAndSupport": "Help & Support",
+    "aboutApp": "About App"
+  },
+  "course_": {
+    "detail": "Detail",
+    "review": "Review",
+    "whatYouWillLearn": "What you'll learn",
+    "toComplete": "to complete"
+  }
+}

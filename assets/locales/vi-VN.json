@@ -1,0 +1,115 @@
+{
+  "appName": "Learn App",
+  "error_": {
+    "error": "Lỗi rồi!!!",
+    "unknown": "Đã có lỗi xảy ra",
+    "illegalData": "Dữ liệu không hợp lệ",
+    "noNetwork": "Không có kết nối internet",
+    "unsupportedFile": "Không hỗ trợ tệp"
+  },
+  "language": ["English", "Tiếng Việt"],
+  "button_": {
+    "ok": "Đồng ý",
+    "cancel": "Xoá",
+    "seeAll": "Xem tất cả",
+    "logout": "Đăng xuất"
+  },
+  "common_": {
+    "search": "Tìm kiếm",
+    "plural_": {
+      "hour": {
+        "__plural": {
+          "zero": "{day} giờ",
+          "one": "{day} giờ",
+          "other": "{day} giờ"
+        }
+      },
+      "day": {
+        "__plural": {
+          "zero": "{day} ngày",
+          "one": "{day} ngày",
+          "other": "{day} ngày"
+        }
+      },
+      "week": {
+        "__plural": {
+          "zero": "{day} tuần",
+          "one": "{day} tuần",
+          "other": "{day} tuần"
+        }
+      },
+      "session": {
+        "__plural": {
+          "zero": "{session} tiết học",
+          "one": "{session} tiết học",
+          "other": "{session} tiết học"
+        }
+      },
+      "question": {
+        "__plural": {
+          "zero": "{question} câu hỏi",
+          "one": "{question} câu hỏi",
+          "other": "{question} câu hỏi"
+        }
+      },
+      "participant": {
+        "__plural": {
+          "zero": "{participant} người tham gia",
+          "one": "{participant} người tham gia",
+          "other": "{participant} người tham gia"
+        }
+      },
+      "rating": {
+        "__plural": {
+          "zero": "{rating} đánh giá",
+          "one": "{rating} đánh giá",
+          "other": "{rating} đánh giá"
+        }
+      }
+    }
+  },
+  "auth_": {
+    "signIn": "Đăng Nhập",
+    "signUp": "Đăng Ký",
+    "forgotPassword": "Quên mật khẩu",
+    "username_": {
+      "label": "Tên người dùng hoặc email",
+      "hint": "Nhập tên người dùng hoặc email",
+      "isRequired": "Tên người dùng hoặc email là bắt buộc"
+    },
+    "password": {
+      "label": "Mật khẩu",
+      "hint": "Nhập mật khẩu",
+      "isRequired": "Mật khẩu là bắt buộc"
+    },
+    "fullName": {
+      "label": "Họ và tên",
+      "hint": "Nhập họ và tên",
+      "isRequired": "Họ và tên là bắt buộc"
+    },
+    "haveNotAnAccount": "Chưa có tài khoản? ",
+    "haveYouAnAccount": "Bạn đã có tài khoản? "
+  },
+  "dashboard_": {
+    "home": "Trang chủ",
+    "setting": "Cài đặt"
+  },
+  "home_": {
+    "title": "Trang chủ",
+    "popularCourses": "Khoá học phổ biến",
+    "popularSkillTests": "Kỹ năng phổ biến"
+  },
+  "setting_": {
+    "preferences": "Tùy chọn",
+    "language": "Ngôn ngữ",
+    "mode": ["Chế độ tối", "Chế độ sáng", "Chế độ tự động"],
+    "helpAndSupport": "Giúp đỡ & Hỗ trợ",
+    "aboutApp": "Về ứng dụng"
+  },
+   "course_": {
+    "detail": "Chi tiết",
+    "review": "Review",
+    "whatYouWillLearn": "Những gì bạn sẽ học",
+    "toComplete": "để hoàn thành"
+  }
+}
