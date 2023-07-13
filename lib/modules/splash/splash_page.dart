@@ -17,21 +17,15 @@ class _SplashPageState extends ConsumerState<SplashPage> {
   @override
   void initState() {
     super.initState();
-    _redirect();
+    redirect();
   }
 
-  Future<void> _redirect() async {
+  Future<void> redirect() async {
     await Future.delayed(Duration.zero);
     if (!mounted) {
       return;
     }
 
-    // final isAuth = ref.watch(appAuthProvider).value;
-    // if (isAuth == true) {
-    //   context.router.replaceAll([const HomeRoute()]);
-    // } else {
-    //   context.replaceRoute(const LoginRoute());
-    // }
     final supabase = Supabase.instance.client;
     final session = supabase.auth.currentSession;
     if (session != null) {
