@@ -15,56 +15,58 @@ class PopularSkillTests extends ConsumerWidget {
     final textTheme = Theme.of(context).textTheme;
     final asyncSkillTests = ref.watch(asyncSkillTestProvider);
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              i18n.home_PopularSkillTests,
-              style: textTheme.headlineSmall,
-            ),
-            TextButton(
-              onPressed: () {
-                // Popular Courses
-              },
-              child: Text(
-                i18n.button_SeeAll,
-                style: const TextStyle(
-                  fontWeight: FontWeight.w500,
-                  decoration: TextDecoration.none,
-                  color: AppColors.information,
-                ),
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                i18n.home_PopularSkillTests,
+                style: textTheme.headlineSmall,
               ),
-            )
-          ],
-        ),
-        asyncSkillTests.when(
-          data: (data) => SizedBox(
-            height: 225,
-            child: ListView.builder(
-              shrinkWrap: true,
-              itemCount: data.length,
-              itemBuilder: (_, index) {
-                final item = data[index];
-                return SkillTestTile(data: item);
-              },
-            ),
+              TextButton(
+                onPressed: () {
+                  // Popular Courses
+                },
+                child: Text(
+                  i18n.button_SeeAll,
+                  style: const TextStyle(
+                    fontWeight: FontWeight.w500,
+                    decoration: TextDecoration.none,
+                    color: AppColors.information,
+                  ),
+                ),
+              )
+            ],
           ),
-          loading: () => SizedBox(
-            height: 225,
-            child: ListView.builder(
-              itemCount: 3,
-              itemBuilder: (_, index) {
-                return const SkillTestTitleShimmer();
-              },
+          asyncSkillTests.when(
+            data: (data) => SizedBox(
+              height: 225,
+              child: ListView.builder(
+                shrinkWrap: true,
+                itemCount: data.length,
+                itemBuilder: (_, index) {
+                  final item = data[index];
+                  return SkillTestTile(data: item);
+                },
+              ),
             ),
-          ),
-          error: (err, stack) => Text('Error: $err'),
-        )
-      ],
+            loading: () => SizedBox(
+              height: 225,
+              child: ListView.builder(
+                itemCount: 3,
+                itemBuilder: (_, index) {
+                  return const SkillTestTitleShimmer();
+                },
+              ),
+            ),
+            error: (err, stack) => Text('Error: $err'),
+          )
+        ],
+      ),
     );
   }
 }

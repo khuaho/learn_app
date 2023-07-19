@@ -80,7 +80,9 @@ class _HomePageState extends ConsumerState<HomePage> {
                 children: const [
                   PopularCourse(),
                   SizedBox(height: 12),
-                  PopularSkillTests(),
+                  Expanded(
+                    child: PopularSkillTests(),
+                  ),
                 ],
               ),
             ),
