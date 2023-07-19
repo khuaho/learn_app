@@ -11,7 +11,6 @@
    ```
 
 2. Android Build for Testing APK
-   k
 
 - DEV
 
@@ -29,4 +28,10 @@
 
   ```sh
   flutter build apk --flavor prod -t lib/main_prod.dart
+  ```
+
+- Numbers of lines of code
+
+  ```
+  find . -name '*.dart' ! -name '*.g.dart' ! -name '*.freezed.dart' ! -name '*.gr.dart' ! -name '*.gen.dart' | xargs wc -l
   ```

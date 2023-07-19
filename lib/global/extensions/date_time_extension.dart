@@ -41,6 +41,9 @@ extension DateTimeExtension on DateTime {
   DateTime combineTime(DateTime other) =>
       DateTime(year, month, day, other.hour, other.minute, other.second);
 
+  DateTime normalizedDate(DateTime value) {
+    return DateTime.utc(value.year, value.month, value.day, 12);
+  }
   // DateTime setTime([
   //   int hour = 0,
   //   int minute = 0,
