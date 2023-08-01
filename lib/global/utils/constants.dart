@@ -14,4 +14,5 @@ class Constants {
   //     'https://www.gespage.com/gcu/xx/smartphonecondition.pdf';
   // static const int filePickerLimit = 10;
   // static const String recharge = 'recharge';
+  static const String oneSignalAppId = '04e45319-93e9-48d7-be96-85b851fdc2ab';
 }

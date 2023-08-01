@@ -7,6 +7,7 @@ import 'package:form_builder_validators/localization/l10n.dart';
 import '../global/app_router/app_router.dart';
 import '../global/gen/i18n.dart';
 import '../global/providers/app_settings_provider.dart';
+import '../onesignal_config.dart';
 
 class MyApp extends ConsumerStatefulWidget {
   const MyApp({super.key});
@@ -17,15 +18,21 @@ class MyApp extends ConsumerStatefulWidget {
 
 class _MyAppState extends ConsumerState<MyApp> with WidgetsBindingObserver {
   final _appRouter = AppRouter();
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+    initPlatformStateOneSignal();
+  }
 
   // @override
   // void initState() {
   //   super.initState();
-  //   WidgetsBinding.instance.addObserver(this);
+  // WidgetsBinding.instance.addObserver(this);
   // ConnectionStatusSingleton connectionStatus =
   //     ConnectionStatusSingleton.getInstance();
   // connectionStatus.initialize(ref);
-  // }
+  // }ghjh
 
   // @override
   // void didChangeAppLifecycleState(AppLifecycleState state) async {
